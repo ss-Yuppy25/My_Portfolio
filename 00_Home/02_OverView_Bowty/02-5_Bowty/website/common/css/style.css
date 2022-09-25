@@ -1,0 +1,247 @@
+@charset "UTF-8";
+/*リセットCSS*/
+*{
+	margin: 0;
+	padding: 0;
+}
+section, article, aside, hgroup, header, footer, mainav, figure {
+	display: block;
+}
+img{
+	display: block;
+	border: none;
+}
+a{
+	color: #554c48;
+	text-decoration: none;
+}
+a:hover {
+	color: #fb5770;
+	opacity: 0.7;
+}
+ul, ol {
+	list-style-type: none;
+}
+body {
+	font-size: 15px;
+	color: #554C48;
+	font-style: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka, "MS PGOthic", ans-serif;
+	background-color: #fbf9f3;
+	line-height: 1.7em;
+}
+
+/*ヘッダーCSS*/
+
+header{
+	min-width: 1000px;
+	width: 1200px;
+	margin: 30px auto;
+	overflow: hidden;
+}
+#logo {
+	float: left;
+	width: 216px;
+}
+#logo a:hover {
+	opacity: 1;
+}
+header nav {
+	float: right;
+	width: 474px;
+}
+header nav:nth-last-child(1){
+	margin: 0;
+}
+
+header li {
+	float: left;
+	width: 118px;
+}
+header li a{
+	display: block;
+	text-align: left;
+	height: 40px;
+	padding-top: 36px;
+	font-size: 25px;
+	font-weight: solid;
+}
+header li::after {
+	content: "";
+	display: block;
+	background-color: #fb5770;
+/*	width: 460px;*/
+	height: 2px;
+}
+main {
+	clear: both;
+	width: 100%;
+}
+#mainPhoto {
+	width: 100%;
+	height: 670px;
+	min-width: 1000px;
+	background-image: url("../images/main-img.jpg");
+	background-size: cover;
+	background-position: center center;
+}
+h2 {
+	margin: 30px 0 30px 0;
+	font-size: 35px;
+	text-align: center;
+	line-height: 150%;
+}
+
+section h2::after {
+	content: "";
+	display: block;
+	background-color: #fb5770;
+	width: 120px;
+	height: 2px;
+	margin: auto;
+}
+#about p {
+	font-size: 18px;
+	text-align: center;
+	line-height: 34px;
+	margin-bottom: 90px;
+}
+
+#menu ul {
+	background-color: #fff;
+	width: 1140px;
+	padding: 30px 30px;
+	margin: auto;
+	overflow: hidden;
+}
+#menu li {
+	float: left;
+	margin-right: 110px;
+}
+#menu li:nth-last-child(1) {
+	margin-right: 0;
+}
+#menu img {
+	width: 200px;
+	height: 200px;
+	
+}
+#menu p {
+	width: 200px;
+	font-size: 16px;
+	text-align: center;
+	margin-top: 9px; 
+}
+.price {
+	font-size: 14px;
+}
+
+.more {
+	width: 1200px;
+	margin: auto;
+}
+.more a{
+	display: block;
+	float: right;
+	background-color: #554c48;
+	padding: 8px 14px;
+	color: #FFFFFF;
+	font-size: 17px;
+	font-style: bold;
+	margin-top: 20px;
+	margin-bottom: 120px;
+}
+#accese {
+	clear: both;
+/*	margin-top: 120px;*/
+}
+#accese ul {
+	width: 1060px;
+	height: 300px;
+	margin: auto;
+}
+
+#accese img {
+	float: left;
+	width: 500px;
+	
+}
+#accese p {
+	float: left;
+	background-color: #fff;
+	width: 420px;
+	height: 180px;
+	padding: 60px 40px;
+	line-height: 30px;
+	font-size: 16px;
+	margin-left: 60px;
+	overflow: hidden;
+}
+#news {
+	margin-top: 120px;
+}
+#news ul {
+	width: 1200px;
+	height: 310px;
+	margin: auto; 
+	text-align: center;
+}
+#news li {
+	display: inline-block;
+	width: 310px;
+	margin-right: 130px;
+}
+#news li:nth-last-child(1){
+	margin-right: 0;
+}
+#news span {
+	display: block;
+	font-size: 14px;
+	color: black;
+}
+#news p {
+	font-size: 16px;
+}
+#news li a:hover{
+	color: black;
+	opacity: 0.7;
+	text-decoration: underline;
+}
+
+footer {
+	clear: both;
+	background-color: #554c48;
+	width: 100%;
+	color: #fff;
+	font-size: 14px;
+	
+}
+#footerInner {
+	width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+	overflow: hidden;
+	
+}
+#footerLogo {
+	width: 158px;
+	float: left;
+	margin-right: 40px;
+}
+footer a:hover {
+	opacity: 1;
+	color: #fff;
+}
+footer li {
+	float: left;
+	margin-top: 50px;
+}
+
+footer a{
+	color: #fff;
+	margin-left: 20px;
+	font-size: 14px;
+}
+footer p {
+	float: right;
+	margin-top: 50px;
+}

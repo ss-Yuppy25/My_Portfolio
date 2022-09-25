@@ -1,0 +1,417 @@
+/* リセットCSS */
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+section, aside, hgroup, header, footer, main, nav, figure {
+    display: block;
+}
+html {
+    font-size: 100%;
+}
+img {
+    display: block;
+    border: none;
+    max-width: 100%;
+}
+ul li,ol li{
+    list-style-type: none;
+}
+
+a {
+    color: #5c5d60;
+    text-decoration: none;
+    transition:all 1s;
+}
+.sp {
+    display: none;
+}
+
+body {
+    font-family: 'Cormorant Infant', 'Taviraj' , 'Noto Serif JP', serif;
+    color: #5c5d60;
+    background-color: #FFFBF7;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+}
+h2 {
+    width: 200px;
+    height: 100px;
+    border-radius: 120px 120px 0 0;
+    background: #525D36;
+    font-size: 34px;
+    color: #FFFBF7;
+    padding-top: 40px;
+    margin: 0 auto 70px auto;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+p{
+    line-height: 1.8em;
+    letter-spacing: 0.2em;
+}
+
+/* ヘッダーのスタイル */
+
+/* 背景の模様設定-------------------------
+----------------------------------- */
+
+header{
+    position: relative;
+    width: 100%;
+    height: 343px;
+    background: -moz-linear-gradient(top,rgba(238,228,227,1), rgba(238,228,227,0.9) 60%, rgba(255,251,247,0.4));
+    background: -webkit-linear-gradient(top,rgba(238,228,227,1) , rgba(238,228,227,0.9) 60%, rgba(255,251,247,0.4));
+    background: linear-gradient(to bottom,rgba(238,228,227,1) , rgba(238,228,227,0.9) 60%, rgba(255,251,247,0.4));
+    position: top -60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* 濃い緑の線 */
+.blue-line {
+    content: "";
+    background: #303B1C;
+    width: 450px;
+    height: 10px;
+    position: absolute;
+    top: 140px;
+    left: 0;
+}
+/* 葉っぱ */
+.reaf {
+    position: fixed;
+    top: 0;
+    right: -81px;
+    z-index: 5;
+    transition:all 1s;
+}
+.move {
+    transform: translate(90px , -20px);
+    transition:all 1s;
+    z-index: 4;
+}
+
+/* もくじ-------------------------
+----------------------------------- */
+
+nav {
+    position: fixed;
+    top: 50px;
+    right: 30px;
+    z-index: 5;
+    font-size: 30px;
+}
+nav li{
+    text-align: right;
+    padding: 0 0 31px 0;
+}
+nav li a{
+    color: #fcd389;
+    position: relative;
+    z-index: 10;
+}
+nav li a::before{
+    content: "";
+    width: 80px;
+    height: 7px;
+    background-color: #BA8B84;
+    position: absolute;
+    top: 21px;
+    right: -13px;
+    z-index: -1;
+    opacity: 0;
+    transition: .3s ease-in;
+}
+nav li:hover a::before {
+    opacity: 1;
+    transition: .3s ease-in;
+}
+nav li:hover a{
+    -webkit-text-stroke: 1px #fcd389;
+    color: rgba(0, 0, 0, 0);
+    transition: .3s ease-in;
+}
+#title {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    z-index: 10;
+    font-size: 38px;
+}
+/* 背景の装飾と全体の設定-----------------
+---------------------------- */
+main {
+    margin: 0 auto;
+    position: relative;
+}
+
+.whiteflower4{
+    width: 150px;
+    position: fixed;
+    top: 200px;
+    left: 180px;
+    transform: rotate(180deg);
+    z-index: -1;
+} 
+.flower3 {
+    width: 50px;
+    position: fixed;
+    top: 340px;
+    right: 80px;
+    transform: rotate(-65deg);
+    z-index: 1;
+}
+section {
+    margin: 0px auto 70px auto;
+}
+
+/* プロフィール-----------------------
+----------------------------------- */
+#Profile {
+    width: 1000px;
+}
+.container ul{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    width: 1000px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.container li:nth-of-type(2) {
+    width: 60%;
+}
+.container img {
+    width: 333px;
+    height: 485px;
+    border-radius: 25px;
+    margin-right: 50px;
+}
+.container p {
+    margin-bottom: 10px;
+}
+.container li p:nth-last-child(2) {
+    margin-bottom: 20px;
+}
+.container2 {
+    margin: 70px auto 0 auto;
+    width: 80%;
+    position: relative;
+}
+.container2 span {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.container2 p span::after{
+    content: "";
+    width: 360px;
+    height: 20px;
+    background-color: #EEE4E3;
+    position: absolute;
+    top: 17px;
+    left: 14px;
+    z-index: -1;
+}
+/* スキル--------------------
+------------------------------ */
+#Skill {
+    background-color: #EEE4E3;
+    text-align: center;
+    padding: 70px 0 70px 0;
+}
+#Skill h3{
+    font-size: 30px;
+}
+#Skill h3 span {
+    font-size: 14px;
+    display: block;
+}
+.S-container {
+    width: 1000px;
+    margin: 70px auto 0 auto;
+}
+.S-container ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+
+.S-container ul li {
+    width: 300px;
+    margin: 0 50px 50px 0;
+    text-align: left;
+    font-size: 16px;
+}
+.S-container ul li:nth-child(3),.S-container ul li:nth-child(6) {
+    margin-right: 0;
+}
+
+#Skill img {
+    margin: 0 auto 20px auto;
+}
+
+/* 将来について-------------------
+--------------------------------- */
+
+#Future ul {
+    width: 1000px;
+    margin: 0 auto;
+}
+#Future ul li {
+    margin-bottom: 50px;
+    display: block;
+}
+#Future ul li span {
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#Future ul li span::after{
+    content: "";
+    width: 672px;
+    height: 20px;
+    background-color: #EEE4E3;
+    position: absolute;
+    top: 17px;
+    left: 14px;
+    z-index: -1;
+}
+#Future ul li:nth-child(2) span::after {
+    width: 499px;
+}
+
+
+/* ボタンの設定--------------------
+------------------------------ */
+
+.buttum a{
+    color: #FFFBF7;
+    padding: 30px 115px;
+    border-radius: 25px;
+    background-color: #BA8B84;
+    margin-top: 30px;
+    position: relative;
+    display: inline-block;
+    transition: all 0.7s;
+}
+.buttum a::before, .buttum a::after {
+    content: "";
+    display: inline-block;
+    width: 33px;
+    height: 1px;
+    background: #FFFBF7;
+}
+.buttum a::before{
+    position: absolute;
+    top: 42px;
+    left: 58px;
+}
+.buttum a::after {
+    position: absolute;
+    top: 42px;
+    right: 58px;
+}
+.buttum a:hover {
+    background: -moz-linear-gradient(left,rgba(219,157,47,1), rgba(255,251,247,0.4)),url(../03-3_common/image/aboutbackground.png);
+    background: -webkit-linear-gradient(left,rgba(219,157,47,1) , rgba(255,251,247,0.4)),url(../03-3_common/image/aboutbackground.png);
+    background: linear-gradient(to right,rgba(219,157,47,1), rgba(255,251,247,0.4)),url(../03-3_common/image/aboutbackground.png);
+}
+
+
+/* フッター---------------------
+---------------------------------- */
+
+footer {
+    margin-top: 70px;
+    background-image: url(../03-3_common/image/footer.png);
+    position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+.footer-inner {
+    padding-top: 170px;
+    text-align: center;
+}
+.footer-inner h3 {
+    color: #FFFBF7;
+    font-size: 38px;
+    padding-bottom: 70px;
+}
+.footer-inner p {
+    color: #FFFBF7;
+    padding-bottom: 30px;
+    line-height: 2em;
+}
+
+.back a{
+    position: relative;
+    display: inline-block;
+    font-size: 22px;
+    -webkit-text-stroke: 1px #FFFBF7;
+    padding: 0 0 10px 47px;
+    transition: .3s;
+    margin-top: 50px;
+}
+.back a:hover {
+    color: #FFFBF7;
+    transition: .3s;
+    border-bottom: 1px solid #FFFBF7;
+}
+
+.back a::before{
+    position: absolute;
+    top: 19px;
+    left: -8px;
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #FFFBF7;
+    transform: rotate(-45deg);
+    z-index: 1;
+    opacity: 0;
+    transition: .3s;
+}
+.back a:hover::before {
+    opacity: 1;
+    transition: .3s;
+}
+.footer-inner p {
+    color: #FFFBF7;
+    padding-bottom: 30px;
+    line-height: 2em;
+}
+/* スクロールトップ設定--------------
+------------------------------- */
+.PageTop {
+    margin: 70px auto 0 auto;
+    display: block;
+    content: "";
+    width: 49px;
+    height: 4px;
+    background-color: #FFFBF7;
+    position: relative;
+}
+.PageTop::after {
+    content: "";
+    border-bottom: 23px solid #FFFBF7;
+    border-right: 24px solid transparent;
+    border-left: 24px solid transparent;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    z-index: 10;
+}
+
+/* コピーライツ設定--------------
+------------------------------- */
+.copy p{
+    position: relative;
+    margin-top: 70px;
+    padding-bottom: 10px;
+}

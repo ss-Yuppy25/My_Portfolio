@@ -1,0 +1,531 @@
+/* CSS Document */
+/* -----------------------------------------------
+リセットCSS ----------------- */
+* {
+	margin: 0;
+	padding: 0;
+}
+section, aside, hgroup, he#Conceptader, footer, main, nav, figure {
+	display: block;
+}
+html {
+	font-size: 100%;
+}
+img {
+	display: block;
+	border: none;
+    max-width: 100%;
+}
+a {
+    color: #FCFAF9;
+	text-decoration: none;
+    letter-spacing: 0.08rem;
+}
+
+ul li,ol li{
+	list-style-type: none;
+}
+h2 {
+    letter-spacing: 0.08rem;
+    font-size: 26px;
+    font-weight: bold;
+
+}
+
+body {
+	color: #65645C;
+	background-color: #FDF9F5;
+	font-size: 20px;
+	font-family: "Kefa", "Hiragino Mincho ProN", "serif";
+}
+/* ------------------------------------------------
+ヘッダー ----------------- */
+header {
+    background-color: #445549;
+    height: 68px;
+    width: 100%;
+}
+
+.header-Inner{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+}
+#logo {
+    position: absolute;
+    top: 16px;
+    left: 0;
+}
+
+nav {
+    margin: 20px 0 0 auto;
+    width: 732px;
+}
+
+nav li a img {
+    width: 29px;
+    height: 29px;
+}
+
+nav  ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+nav li a {
+    display: block;
+    padding:5px 10px;
+    font-weight: bold;
+    position: relative;
+}
+
+nav li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 8%;
+    width: 80%;
+    height: 2px;
+    background:#FDF9F5;
+    transition: all .3s;
+    transform: scale(0, 1);
+    transform-origin: center top;
+}
+nav li a:hover::after {
+    transform: scale(1, 1);
+}
+
+
+/*-----------------　イメージ -----------------*/
+
+.main-image {
+    background-image: url(../img/main-image.jpg);
+    width: 100%;
+    height: 671px;
+    min-width: 100px;
+    background-size: cover;
+	background-position: center;
+	position: relative;
+}
+/* -----------------　お知らせ ----------------- */
+#Info {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(68,85,73, 0.9);
+/*     width: 753px;　高さと幅の指定はしない
+ *//*     height: 198px;*/
+     color: #FCFAF9;
+}
+.Info-inner {
+    /* margin: 25px auto; */
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    /* leftとrightで幅を調整する */
+    margin-right: 25px;
+/*     width: 600px;
+ */    
+}
+.Info-title a {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+}
+.Info-inner a {
+/*     display: inline-block;　ブロック要素にする */
+    display: block;
+    line-height: 2.2;
+    font-size: 18px;
+}
+
+.Info-inner a span {
+    padding-right: 10px;
+}
+
+.Info-inner a:hover {
+    opacity: 0.7;
+}
+
+/* -----------------　コンセプト ----------------- */
+
+#Concept {
+    margin: 272px 0 0 auto;
+    background-color: #445549;
+    font-size: 22px;
+    line-height: 2.6;
+    color: #FCFAF9;
+    width: 1273px;
+    padding: 100px 0;
+/*     height: 353px;
+ *//*     display: flex;
+    align-items: center;
+    justify-content: space-between;　不要
+ */
+    }
+
+
+.inner-Concept {
+/*     width: 1029px;　widthの指定不要 */
+  /*   margin-left: 45px; 　不要*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Concept-title{
+    position: relative;
+}
+
+.Concept-title img {
+    width: 274px;
+    height: 136px;
+}
+.inner-Concept h2 {
+    line-height: 1.15;
+    position: absolute;
+    top: 53px;
+    left: 87px;
+    color: #65645C;
+}
+
+/* -----------------　メニュー ----------------- */
+
+#Menu {
+    width: 85%;
+    margin: 272px auto 0 auto;
+    text-align: center;
+}
+
+#Menu h2 {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.attenction {
+    font-size: 16px;
+    color: #8E4330;
+    margin-bottom: 90px;
+}
+
+#Menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Menu figure{
+    display: inline-block;
+    width: 350px;
+}
+
+#Menu figure img {
+    height: 250px;
+    border-radius: 8px;
+    filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.2));
+}
+
+#Menu figcaption {
+    font-size: 18px;
+    margin: 54px 0 90px 0;
+    line-height: 2.2;
+}
+
+#Menu span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Menu-link , .Menu-link a{
+    position: relative;
+    padding: 5px;
+    color: #8E4330;
+    text-align: right;
+    font-size: 18px;
+    position: relative;
+}
+
+
+.Menu-link  a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background:#8E4330;
+    transition: all .3s;
+    transform: scale(0, 1);
+    transform-origin: center top;
+}
+.Menu-link  a:hover::after {
+    transform: scale(1, 1);
+}
+
+/* -----------------　ワイン ----------------- */
+
+.Wine-title {
+    width: 85%;
+    margin: 272px auto 0 auto;
+    display: flex;
+    align-items: left;
+    margin-bottom: 78px;
+    position: relative;
+}
+
+.Wine-maintitle {
+    display: inline-block;
+    margin: 34px auto 0 47px;
+}
+.Wine-title p {
+    margin-top: 34px;
+}
+ .Wine-title::after {
+    position: absolute;
+    top: 231px;
+    left: -100px;
+    display: inline-block;
+	border-top: 2px solid #47544A;
+    content: "";
+    width: 85%;
+} 
+
+#Wine ul {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#Wine ul li {
+    margin: 83px 0;
+}
+
+#Wine ul img {
+    border-radius: 8px;
+    width: 420px;
+    height: 552px;
+    filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.2));
+}
+
+.Wine-inner {
+    width: 551px;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    margin-left: 50px;
+}
+.Wine-inner h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.attenction2 {
+    font-size: 16px;
+    color: #8E4330;
+    margin-top: 16px;
+}
+
+.red, .white {
+    margin-top: 44px;
+    line-height: 2.3;
+}
+
+#Wine ul::after {
+    position: absolute;
+    top: 718px;
+    right: 0px;
+    display: inline-block;
+	border-top: 2px solid #47544A;
+    content: "";
+    width: 85%;
+}
+
+.buttum {
+    margin: 167px auto 272px auto;
+    position: relative;
+    text-align: center;
+    border-radius: 50px;
+    width: 226px;
+    background: transparent;
+    transition: all 0.2s ease;
+}
+
+.buttum:hover{
+	border-color:transparent;	
+}
+
+.buttum a {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    padding: 19px 70px;
+    border-radius: 50px;
+    background-color: #8E4330;
+    color: #FCFAF9;
+    transition: all 0.3s ease;
+}
+
+.push:before {
+    position: absolute;
+    content: "";
+	z-index: -1;
+    top: 4px;
+    left: 4px;
+    width: 100%;
+    height: 100%;
+	border-radius: 50px;
+    background-color: rgba(0,0,0,0.2);
+}
+.push:hover a {
+	background-color: #8E4330;
+	color: #FCFAF9;
+	transform: translate(4px, 4px);
+    opacity: 1;
+}
+
+
+
+/* -----------------　アクセス ----------------- */
+
+#Access {
+    width: 1043px;
+    margin: 0 auto 272px auto;
+    text-align: center;
+}
+#Access h2 {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 110px;
+}
+#Access h2 img {
+    position: absolute;
+    top: -7px;
+    left: 105px;
+}
+#Access ul {
+    display: flex;
+    text-align: left;
+    vertical-align: top;
+}
+.map {
+    max-width: 537px;
+    min-width: 280px;
+}
+
+
+.googlemap iframe { 
+    border-radius: 8px;
+    filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.2));
+}
+
+
+#Access table {
+    font-size: 16px;
+    line-height: 2;
+    margin-left: 68px;
+}
+#Access th {
+    font-weight: bold;
+    vertical-align: top;
+    padding-right: 29px;
+}
+
+#Access td {
+    padding-bottom: 72px;
+}
+
+/* -----------------　フッター ----------------- */
+footer {
+    background-color: #47544A;
+    height: 67px;
+    width: 100%;
+    text-align: center;
+    
+    color: #FCFAF9;
+}
+footer p {
+    font-size: 14px;
+    padding-top: 26px;
+}
+
+/* ---------- アニメーション ------------- */
+
+nav {
+    animation-name:fadeInAnime;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+@keyframes fadeInAnime{
+        from {
+            opacity: 0;
+        }
+        
+        to {
+            opacity: 1;
+        }
+    }
+
+#Info {
+    animation-name:fadeRightAnime;
+    animation-duration: 1.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+} 
+@keyframes fadeRightAnime{
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }    
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    }  
+
+
+.fadeUp{
+    animation-name:fadeUpAnime;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+@keyframes fadeUpAnime{
+    from {
+    opacity: 0;
+    transform: translateY(100px);
+    }
+        
+    to {
+        opacity: 1;
+    transform: translateY(0);
+    }
+}
+.fadeUpTrigger , .fadeLeftTrigger {
+        opacity: 0;
+    }
+    
+
+.fadeLeft{
+        animation-name:fadeLeftAnime;
+        animation-duration: 1s;
+        animation-fill-mode:forwards;
+        opacity:0;
+        }
+        
+@keyframes fadeLeftAnime{
+    from {
+            opacity: 0;
+            transform: translateX(-100px);
+    }
+        
+    to {
+            opacity: 1;
+            transform: translateX(0);
+    }
+}

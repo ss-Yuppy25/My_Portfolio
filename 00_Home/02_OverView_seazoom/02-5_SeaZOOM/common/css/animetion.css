@@ -1,0 +1,256 @@
+ /* アニメーション-------------------------- */
+
+    .fadeInTrigger,
+    .fadeUpTrigger,
+    .fadeDownTrigger,
+    .fadeLeftTrigger,
+    .fadeRightTrigger {
+    opacity: 0;
+    }
+    .fadeIn{
+    animation-name:fadeInAnime;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+    @keyframes fadeInAnime{
+        from {
+        opacity: 0;
+        }
+    
+        to {
+        opacity: 1;
+        }
+    }
+    .fadeIn2{
+        animation-name:fadeInAnime;
+        animation-duration:2s;
+        animation-fill-mode:forwards;
+        opacity:0;
+        }
+        
+        @keyframes fadeInAnime{
+            from {
+            opacity: 0;
+            }
+        
+            to {
+            opacity: 1;
+            }
+        }
+
+.fadeUp{
+    animation-name:fadeUpAnime;
+    animation-duration:1.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+    @keyframes fadeUpAnime{
+        from {
+        opacity: 0;
+        transform: translateY(40px);
+        }
+    
+        to {
+        opacity: 1;
+        transform: translateY(0);
+        }
+    }
+    .fadeRight{
+        animation-name:fadeRightAnime;
+        animation-duration: 1.5s;
+        animation-fill-mode:forwards;
+        opacity:0;
+        }
+        
+        @keyframes fadeRightAnime{
+            from {
+            opacity: 0;
+            transform: translateX(100px);
+            }
+        
+            to {
+            opacity: 1;
+            transform: translateX(0);
+            }
+        }
+
+/* ぼかし */
+.blur2{
+    animation-name:blur2Anime;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+
+@keyframes blur2Anime{
+    from {
+        filter: blur(10px);
+        transform: scale(0.8);
+    }
+    
+    to {
+        filter: blur(0);
+        transform: scale(1);
+        opacity:1;
+    }
+}
+.blur3{
+    animation-name:blur3Anime;
+    animation-duration:3s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+    
+@keyframes blur3Anime{
+    from {
+    filter: blur(10px);
+    transform: scale(0.8);
+    }
+
+    to {
+    filter: blur(0);
+    transform: scale(1);
+    opacity:1;
+    }
+}
+/* ----ズーム効果--------- */
+.zoom{
+    animation-name:zoomAnime;
+    animation-duration:1.8s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+    
+@keyframes zoomAnime{
+    0% {
+    filter: blur(10px);
+    transform: scale(0.2);
+    }
+    40% {
+        filter: blur(5px);
+        transform: scale(2.5);
+        }
+
+    100% {
+    filter: blur(0);
+    transform: scale(1);
+    opacity:1;
+    }
+}
+
+
+    /* ----ふわふわ効果--------- */
+    .flip1,.flip2,.flip3 {
+        animation-name: flip1Anime;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        /* animation-timing-function: ease-in; */
+    }
+    @keyframes flip1Anime{
+        0% {
+            transform: translate(0);
+        }
+        40% {
+            transform: translate(13px, 13px) skew(0,-1deg);
+        }
+        60% {
+            transform: translate(-8px, -8px) ;
+        }
+        100% {
+            transform: translate( 0px,0px) skew(0,0deg);
+        }
+    }
+    .flip2 {
+        animation-name: flip2Anime;
+        animation-duration: 6s;
+    }
+    @keyframes flip2Anime{
+        0% {
+            transform: translate(0);
+        }
+        40% {
+            transform: translate(-15px, 10px) skew(0,1deg);
+        }
+        60% {
+            transform: translate(5px, 10px);
+        }
+        100% {
+            transform: skew(0, 0) translate(0) skew(0,0deg);
+        }
+    }
+
+    .flip3 {
+        animation-name: flip3Anime;
+        animation-duration: 8s;
+    }
+    @keyframes flip3Anime{
+        0% {
+            transform: translate(0);
+        }
+        40% {
+            transform: translate(6px, 8px) skew(0,-1deg);
+        }
+        60% {
+            transform: translate(-10px, 20px);
+        }
+        100% {
+            transform: translate(0) skew(0,0deg);
+        }
+    }
+
+    .flipup1 {
+        animation-name: flipup1Anime;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        transform-origin: left;
+    }
+    @keyframes flipup1Anime{
+        0%{
+            transform: skew(0deg,0deg);
+            transform-origin: left;
+        }
+        40%{
+
+            transform: skew(0,2deg);
+            transform-origin: right;
+        }
+        60%{
+            transform: skew(0,-2deg);
+            transform-origin: left;
+        }
+        100%{
+            transform: skew(0,0deg);
+            transform-origin: right;
+        }
+    }
+
+
+
+    /* アニメーションの開始を遅らせる*/
+
+    .delay-time05{
+    animation-delay: 0.5s;
+    }
+    
+    .delay-time1{
+    animation-delay: 1s;
+    }
+    
+    .delay-time15{
+    animation-delay: 1.5s;
+    }
+    
+    .delay-time2{
+    animation-delay: 2s;
+    }
+    
+    .delay-time25{
+        animation-delay: 2.5s;
+    }
+    .delay-time4{
+        animation-delay: 4s;
+    }
