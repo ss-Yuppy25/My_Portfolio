@@ -70,10 +70,10 @@ header{
 .blue-line {
     content: "";
     background: #303B1C;
-    width: 450px;
-    height: 10px;
+    width: 515px;
+    height: 19px;
     position: absolute;
-    top: 140px;
+    top: 158px;
     left: 0;
 }
 

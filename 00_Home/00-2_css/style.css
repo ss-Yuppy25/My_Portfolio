@@ -211,28 +211,21 @@ section {
     font-size: 18px;
 }
 
-.container li img {
+.web img , .banner img {
     margin-bottom: 20px;
-    border-radius: 25px;
+    border-radius: 5px;
     border: 1px solid #BA8B84;
 }
-
-.banner {
+.banner img {
+    border-radius: 0px;
+}
+.b_inner {
+    height: 300px;
     background-color: #FFFBF7;
-    width: 300px;
-    height: 164px;
     align-items: center;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+    display: flex;
 }
-
-.container li:nth-child(5) img {
-    border-radius: 0;
-    margin-bottom: 0;
-}
-
 /* ホバー時の設定 ------------------------
 ---------------------------------------*/
 figure span.mask {
@@ -248,10 +241,10 @@ figure:hover span.mask::before {
     z-index: 2;
     top: 0;
     left: 0;
+    border-radius: 5px;
     width: 100%;
     height: 100%;
     background: linear-gradient(45deg, rgba(238, 228, 227, 0.3), rgba(238, 228, 227, 0.9) 60%, rgba(255, 251, 247, 0.2));
-    border-radius: 25px;
 }
 
 figure:hover span.mask2::before {
